@@ -1,5 +1,5 @@
 import pygame
-
+ 
 class HorizontalScrollBar:
     def __init__(self, x, y, width, height, min_value, max_value, initial_value, bg_color, thumb_color):
         """
