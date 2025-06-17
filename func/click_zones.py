@@ -1,6 +1,5 @@
 import math
 
-
 # Функция для создания зоны, реагирующей на нажатие мыши
 def create_click_zone(x, y, width, height):
     """
@@ -15,6 +14,16 @@ def create_click_zone(x, y, width, height):
         return x <= mouse_x <= x + width and y <= mouse_y <= y + height
     return is_inside
 
+def create_click_zone_is_inside(x, y, width, height,mouse_x, mouse_y):
+    """
+    Создает зону, которая реагирует на нажатие мыши.
+    :param x: Координата X верхнего левого угла зоны.
+    :param y: Координата Y верхнего левого угла зоны.
+    :param width: Ширина зоны.
+    :param height: Высота зоны.
+    :return: Функция, которая проверяет, находится ли точка (mouse_x, mouse_y) внутри зоны.
+    """
+    return x <= mouse_x <= x + width and y <= mouse_y <= y + height
 
 # Функция для создания круглой зоны
 def create_circle_zone(center_x, center_y, radius, mouse_x, mouse_y):
