@@ -1,2 +1,2 @@
 # UNIT_Game
-Игра на PyGame
+Игра на python
